@@ -1,0 +1,21 @@
+﻿<Window x:Class="ChakraVoice.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChakraVoice"
+        mc:Ignorable="d"
+        Title="ChakraVoice" Height="350" Width="525">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="42*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnStart" Content="Start" HorizontalAlignment="Left" Margin="42,279,0,0" VerticalAlignment="Top" Width="75" Click="button_Click" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="SpeechLog" HorizontalAlignment="Left" Height="254" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="497" Grid.ColumnSpan="2" VerticalScrollBarVisibility="Auto"/>
+        <Button x:Name="btnStop" Content="Stop" HorizontalAlignment="Left" Margin="346,279,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1" Click="btnStop_Click" IsEnabled="False"/>
+        <Label x:Name="lblMode" Content="Mode:" Grid.Column="1" HorizontalAlignment="Left" Height="30" Margin="125,276,0,0" VerticalAlignment="Top" Width="47"/>
+        <Label x:Name="lblCurMode" Content="Winamp" Grid.Column="1" HorizontalAlignment="Left" Height="30" Margin="172,276,0,0" VerticalAlignment="Top" Width="120"/>
+    </Grid>
+</Window>
